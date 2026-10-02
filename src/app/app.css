@@ -1,0 +1,103 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, sans-serif background-color: #f4f4f5;
+}
+
+.contador {
+  width: min(90%, 500px);
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+}
+
+h1 {
+  color: #18181b
+}
+
+.descrição {
+  color: #71717a
+}
+
+.painel {
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 8px 24px rgb(0 0 0 /10%)
+}
+
+
+.rotulo {
+  margin: 0;
+  color: #71717a;
+}
+
+.valor {
+  display: block;
+  margin: 16px 0 24px;
+  font-size: 64px;
+  color: #2563eb;
+}
+
+.acoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  background-color: #2563eb;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.configuracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: #3f3f46;
+}
+
+.configuracao input {
+  width: 80px;
+  padding: 8px;
+  border: 1px solid #d4d4d8;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.valor.positivo,
+.mensagem.positivo {
+  color: #16a34a;
+}
+
+.valor.negativo,
+.mensagem.negativo {
+  color: #dc2626;
+}
+
+.valor.zero,
+.mensagem.zero {
+  color: #71717a;
+}
+
+.mensagem {
+  margin-top: -12px;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
